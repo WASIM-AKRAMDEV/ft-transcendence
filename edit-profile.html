@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ft-transcendence | Edit</title>
+
+  <!-- CSS File Linking -->
+  <link href="./style.css" rel="stylesheet">
+
+  <!-- Poppins - Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+<nav class="nav">
+  <div class="custom-container">
+    <div class="navbar">
+      <div class="logo">
+        <h1>Ft-transcendence</h1>
+        <div class="nav-btns">
+          <button class="btn-user">
+            <img src="./images/Group 2.svg" alt="" />
+          </button>
+          <button class="btn-gamepad">
+            <img src="./images/Group 1.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="end-nav-btns">
+        <div class="bell-btn">
+          <a href="#" onclick="toggleDropdown('bellDropdown')" >
+              <img src="./images/Group 4.svg" alt="" />
+          </a>
+          <div class="dropdown-content" id="bellDropdown">
+            <div class="content">
+              <div class="user-btn">
+                <img src="./images/Group 3.svg" alt="" />
+              </div>
+              <p>Notification</p>
+              <i class="fa-solid fa-check check"></i>
+              <i class="fa-solid fa-xmark cross" id="cross"></i>
+            </div>
+          </div>
+        </div>
+
+     
+        <div class="user-btn">
+          <a href="#"  onclick="toggleDropdown('userDropdown')">
+              <img src="./images/Group 3.svg" alt="" />
+          </a>
+          <div class="dropdown-content-one" id="userDropdown">
+            <i class="fa-solid fa-xmark usercross" id="crossTwo"></i>
+            <div class="content">
+              <div class="user-btn">
+                <img src="./images/Group 3.svg" alt="" />
+              </div>
+              <a href="./edit-profile.html" class="login-btn">Edit your profile</a>
+              <a href="./register.html" class="sigup-btn">Signup</a>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars bar" id="bar"></i>
+      </div>
+    </div>
+  </div>
+  <div class="list-bar" id="list">
+    <div class="nav-btns">
+      <button class="btn-user">
+        <img src="./images/Group 2.svg" alt="" />
+      </button>
+      <button class="btn-gamepad">
+        <img src="./images/Group 1.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- main body -->
+<main class="main-index">
+  <div class="userDiv-0">
+    <img src="images/user-3.png" class="image-2" alt="user">
+    <div class="user-div">
+      <label for='picture'>
+        <img src="images/pencil.png" class="image-3" width="50" height="50" alt="user">
+      </label>
+    </div>
+
+    <form style='display: none;'>
+      <input type="file" name="pic" accept=".gif,.jpg,.png,.tif|image/*" id='picture'>
+      <input type="submit">
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="index-container">
+
+    <form class="login-form">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Nickname">
+      <input type="email" placeholder="Email">
+      <div class="login-buttons">
+        <button type="button" class="btn-1">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; Copyright 2024. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="./script.js"></script>
+    <script
+    src="https://kit.fontawesome.com/e62912d1a1.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

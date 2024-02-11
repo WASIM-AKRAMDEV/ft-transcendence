@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ft-transcendence</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="custom-container">
+        <div class="navbar">
+          <div class="logo">
+            <h1>Ft-transcendence</h1>
+            <div class="nav-btns">
+              <button class="btn-user">
+                <img src="./images/Group 2.svg" alt="" />
+              </button>
+              <button class="btn-gamepad">
+                <img src="./images/Group 1.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="end-nav-btns">
+            <div class="bell-btn">
+              <a href="#" onclick="toggleDropdown('bellDropdown')" >
+                  <img src="./images/Group 4.svg" alt="" />
+              </a>
+              <div class="dropdown-content" id="bellDropdown">
+                <div class="content">
+                  <div class="user-btn">
+                    <img src="./images/Group 3.svg" alt="" />
+                  </div>
+                  <p>Notification</p>
+                  <i class="fa-solid fa-check check"></i>
+                  <i class="fa-solid fa-xmark cross" id="cross"></i>
+                </div>
+              </div>
+            </div>
+
+         
+            <div class="user-btn">
+              <a href="#" onclick="toggleDropdown('userDropdown')">
+                  <img src="./images/Group 3.svg" alt="" />
+              </a>
+              <div class="dropdown-content-one" id="userDropdown">
+                <i class="fa-solid fa-xmark usercross" id="crossTwo"></i>
+                <div class="content">
+                  <div class="user-btn">
+                    <img src="./images/Group 3.svg" alt="" />
+                  </div>
+                  <a href="./edit-profile.html" class="login-btn">Edit your profile</a>
+                  <a href="./register.html" class="sigup-btn">Signup</a>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-bars bar" id="bar"></i>
+          </div>
+        </div>
+      </div>
+      <div class="list-bar" id="list">
+        <div class="nav-btns">
+          <button class="btn-user">
+            <img src="./images/Group 2.svg" alt="" />
+          </button>
+          <button class="btn-gamepad">
+            <img src="./images/Group 1.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="User-section">
+      <div class="custom-container">
+        <div class="user-main-cont">
+          <div class="user-cont">
+            <div class="main-user">
+              <div class="user-details">
+                <div class="user-img">
+                  <img src="./images/user-image.png" alt="" />
+                </div>
+                <div class="content">
+                  <div class="james-small">
+                    <p>jamesjohn02</p>
+                  </div>
+                  <h2>Jamey</h2>
+                  <p>jamesjohn02@gmail.com</p>
+                </div>
+              </div>
+              <div class="active-btn">
+                <button>Active</button>
+              </div>
+            </div>
+            <div class="navs-tabs">
+              <div class="navs">
+                <a onclick="showTab('tab1')" class="active">Game 1</a>
+                <a onclick="showTab('tab2')">Game 2</a>
+              </div>
+              <div id="tab1" class="tab-content active-tab">
+                <div class="stats">
+                  <h1>Stats</h1>
+                  <div class="cards-main">
+                    <div class="card">
+                      <h5>Wins</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Losses</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Ratio</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Trophies</h5>
+                      <h1>00</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="Matches">
+                  <h1>Matches History</h1>
+                  <div class="table">
+                    <div class="thead">
+                      <div class="tr data-one">Adversarie</div>
+                      <div class="tr data-two">Score</div>
+                      <div class="tr data-three">Date</div>
+                    </div>
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td data-one">LOGIN 1</div>
+                        <div class="td data-two">6-5</div>
+                        <div class="td data-three">12-12-12</div>
+                      </div>
+                      <div class="tr">
+                        <div class="td data-one">BOB</div>
+                        <div class="td data-two">10-1</div>
+                        <div class="td data-three">10-12-12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="tab2" class="tab-content">
+                <div class="stats">
+                  <h1>Stats</h1>
+                  <div class="cards-main">
+                    <div class="card">
+                      <h5>Wins</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Losses</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Ratio</h5>
+                      <h1>00</h1>
+                    </div>
+                    <div class="card">
+                      <h5>Trophies</h5>
+                      <h1>00</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="Matches">
+                  <h1>Matches History</h1>
+                  <div class="table">
+                    <div class="thead">
+                      <div class="tr data-one">Adversarie</div>
+                      <div class="tr data-two">Score</div>
+                      <div class="tr data-three">Date</div>
+                    </div>
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td data-one">LOGIN</div>
+                        <div class="td data-two">6-5</div>
+                        <div class="td data-three">12-12-12</div>
+                      </div>
+                      <div class="tr">
+                        <div class="td data-one">BOB</div>
+                        <div class="td data-two">10-1</div>
+                        <div class="td data-three">10-12-12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-friend-list">
+            <div class="friend-list">
+              <div class="frined-list-heading">
+                <h5>Friends List</h5>
+                <h6>3 &nbsp; Online</h6>
+              </div>
+              <div class="frined-list-members">
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                      <p>Playing PinPang...</p>
+                    </div>
+                  </div>
+                  <button class="active-member-btn">Active</button>
+                </div>
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                      <p>Playing PinPang...</p>
+                    </div>
+                  </div>
+                  <button class="active-member-btn">Active</button>
+                </div>
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                      <p>Playing PinPang...</p>
+                    </div>
+                  </div>
+                  <button class="active-member-btn">Active</button>
+                </div>
+              </div>
+            </div>
+            <div class="friend-list">
+              <div class="frined-list-heading offline-member">
+                <h5>Friends List</h5>
+                <h6>3 &nbsp; Offline</h6>
+              </div>
+              <div class="frined-list-members">
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                    </div>
+                  </div>
+                  <button class="active-member-btn offline-member">
+                    Offline
+                  </button>
+                </div>
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                    </div>
+                  </div>
+                  <button class="active-member-btn offline-member">
+                    Offline
+                  </button>
+                </div>
+                <div class="active-member">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                    </div>
+                  </div>
+                  <button class="active-member-btn offline-member">
+                    Offline
+                  </button>
+                </div>
+                <div class="active-member end-btns">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                    </div>
+                  </div>
+                  <button class="active-member-btn offline-member">
+                    Offline
+                  </button>
+                </div>
+                <div class="active-member end-btns">
+                  <div class="member-details">
+                    <img src="./images/user-image-s.png" alt="" />
+                    <div>
+                      <h2>Robert Hudson</h2>
+                    </div>
+                  </div>
+                  <button class="active-member-btn offline-member">
+                    Offline
+                  </button>
+                </div>
+                <button class="add-friend">+ Add a friends</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+    src="https://kit.fontawesome.com/e62912d1a1.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
